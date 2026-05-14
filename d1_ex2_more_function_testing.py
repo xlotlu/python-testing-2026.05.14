@@ -17,7 +17,13 @@ MAX_PENALTY_POINTS = 12
 class LicenseSuspended(Exception):
     pass
 
-def check_speed(speed):
+def check_speed(speed: int) -> int:
+    """
+    Verifies that the speed is not over SPEED_LIMIT.
+    If it is, returns a number of penalty points,
+    or, if over MAX_PENALTY_POINTS, raises
+    LicenseSuspended.
+    """
     # If speed is within the legal limit, 
     # return 0 penalty points
     if speed <= SPEED_LIMIT:
@@ -37,7 +43,5 @@ def check_speed(speed):
 # 2.
 # Write assertion tests for it.
 
-assert check_speed(110) == 12
-check_speed(120) # error
-check_speed(12)
-
+# see
+# d1_ex2_tests_using_assert.py

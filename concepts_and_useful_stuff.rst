@@ -51,6 +51,26 @@ corner cases = situații rare(!), improbabile
 boundary cases = unde o diferență (mică) de la o valoare la alta generează schimbare în sistem
 
 
+
+Forma canonică de rulat (în shell) unittest-uri:
+------------------------------------------------
+
+# un singur fișier:
+python -m unittest myfile.py
+
+# (sau modul)
+python -m unittest mymodule
+
+# sau mai multe fișiere deodată:
+python -m unittest myfile1.py myfile2.py etc.py
+
+# forma canonică-canonică de rulat în producție,
+# folosind discover:
+python -m unittest discover -s myfolder_with_tests
+
+
+
+
 Instalare de pachete:
 ---------------------
 
