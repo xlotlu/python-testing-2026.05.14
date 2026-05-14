@@ -1,0 +1,7 @@
+    sesiune:    9:00 - 11:00
+ pauză mică:   11:00 - 11:20
+    sesiune:   11:20 -  1:00
+pauză prânz:    1:00 -  2:00
+    sesiune:    2:00 -  3:30
+ pauză mică:    3:30 -  3:45
+    sesiune:    3:45 -  5:00
