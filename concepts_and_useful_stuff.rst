@@ -46,11 +46,9 @@ Exemplu de specificație și mai high-level, "user stories":
 
 
 
-
-
 "regular" cases
-corner cases!
-boundary cases
+corner cases = situații rare(!), improbabile
+boundary cases = unde o diferență (mică) de la o valoare la alta generează schimbare în sistem
 
 
 Instalare de pachete:
@@ -59,4 +57,13 @@ Instalare de pachete:
 (în shell-ul de sistem)
 
 pip install ipython
+
+
+Essential wisdom:
+-----------------
+
+There are 2 really hard things in computing:
+- naming things
+- cache invalidation
+- off-by-one errors
 

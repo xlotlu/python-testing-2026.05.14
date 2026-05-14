@@ -37,6 +37,8 @@ try:
 except ValueError as exc:
     has_exception = True
 
+# we have to have an exception for an empty list:
+assert has_exception
 
 # other important variations in the number of elements:
 # one and two
