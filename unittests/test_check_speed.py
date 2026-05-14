@@ -1,3 +1,4 @@
+import sys
 import unittest
 
 from d1_ex2_more_function_testing import (
@@ -30,6 +31,7 @@ class CheckSpeedTestCase(unittest.TestCase):
         self.assertEqual(check_speed(SPEED_LIMIT + KMH_PER_POINT * MAX_PENALTY_POINTS),
                          MAX_PENALTY_POINTS)
 
+    @unittest.skip("alternative implementation")
     def test_license_suspended(self):
         self.assertRaises(
             LicenseSuspended, # what it raises
@@ -37,6 +39,13 @@ class CheckSpeedTestCase(unittest.TestCase):
             SPEED_LIMIT + KMH_PER_POINT * (MAX_PENALTY_POINTS + 1)
         )
 
-    @unittest.skip
+    def test_license_suspended_alt(self):
+        with self.assertRaises(LicenseSuspended):
+            check_speed(SPEED_LIMIT + KMH_PER_POINT * (MAX_PENALTY_POINTS + 1))
+
+    @unittest.skipUnless(
+            sys.platform == "very_special_platform",
+            "demo for conditional skipping"
+        )
     def test_that_does_nothing(self):
         pass

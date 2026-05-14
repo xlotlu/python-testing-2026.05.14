@@ -41,7 +41,7 @@ Exemplu de specificație și mai high-level, "user stories":
         Din acesta se generează task-uri:
         - users: name, username, password, role 
         - admin interface
-    
+
 
 
 
@@ -68,6 +68,10 @@ python -m unittest myfile1.py myfile2.py etc.py
 # folosind discover:
 python -m unittest discover -s myfolder_with_tests
 
+# forma canonică-canonică de rulat în producție,
+# folosind discover,
+# limitând la un singur fișier
+# (atenție, -k este pattern ce match-uiește numele fully-qualified)
 
 
 
