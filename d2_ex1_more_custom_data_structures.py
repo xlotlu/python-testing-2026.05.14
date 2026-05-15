@@ -26,3 +26,6 @@ class Employee:
             raise ValueError("Invalid raise percentage: %s" % percentage)
 
         self.salary += self.salary * percentage / 100
+
+    def pay_salary(self):
+        self.bank_account.deposit(self.salary)

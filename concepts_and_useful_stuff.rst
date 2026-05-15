@@ -46,10 +46,16 @@ Exemplu de specificație și mai high-level, "user stories":
 
 
 
-"regular" cases
+"regular" cases, inclusiv situații complexe (operațiuni multiple ce apar în normal usage patterns)
 corner cases = situații rare(!), improbabile
 boundary cases = unde o diferență (mică) de la o valoare la alta generează schimbare în sistem
 
+
+Keywords:
+---------
+
+
+fixture = "a defined, reliable and consistent context"
 
 
 Forma canonică de rulat (în shell) unittest-uri:
@@ -75,11 +81,20 @@ python -m unittest discover -s myfolder_with_tests
 
 
 
+
+Forma canonică (always safe) de rulat pytest:
+---------------------------------------------
+
+python -m pytest folder_cu_teste/
+
+
+
 Instalare de pachete:
 ---------------------
 
 (în shell-ul de sistem)
 
+pip install pytest
 pip install ipython
 
 
